@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>BLOG CALENDER</title>
+    <!-- BOOTSTRAP 4 BOOTSWATCH LUX THEME -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar" style="background-color:	#020a36;">
+      <div class="container">
+        <a class="navbar-brand" href="#" style="color: antiquewhite;">BLOG CALENDER</a>
+        <img src="https://th.bing.com/th/id/OIP.j9pPvsrx1wr71kX5y79O-QHaHa?w=186&h=186&c=7&r=0&o=5&pid=1.7" alt="TechNews Logo" class="nav-brand">
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-md-4">
+
+          <div class="card">
+            <div class="card-body"style="background-color:black">
+              <!-- FORM TO ADD TASKS -->
+              <form id="formTask">
+                <div class="form-group">
+                  <p style="color:green">Esta Agenda sirve para organizar tus tiempos , eventos , entre otras cosas  , para que no hayan cruces entre las cosas pendientes.</p>
+                  <input type="text" id="title" placeholder="Titulo de Etiqueta =)" class="form-control">
+                </div>
+                <div class="form-group">
+                  <textarea id="description" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                  <input type ="date" id="date" cols="30" rows="10" class="form-control"></textarea> 
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" style="background-color: blue;">Guardar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div id="tasks"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+    <script>alert("Bienvenidos a BLOG CALENDER creado por Sebastian Pinto")</script>
+  </body>
+</html>
